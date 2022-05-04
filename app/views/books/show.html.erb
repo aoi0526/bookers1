@@ -1,0 +1,8 @@
+
+<th class="header1">Title:</th>
+<p><%= @book.title %></p>
+
+<th class="header2">Body:</th>
+<p><%= @book.body %></p>
+
+<p><%= link_to "Edit","/books/#{@book.id}/edit" %> | <%= link_to "Back","/books" %></p>
