@@ -1,10 +1,12 @@
-<p><%= flash[:notice_crea] %></p>
-<p><%= flash[:notice2] %></p>
+<p class="notice"><%= flash[:notice] %></p>
 
-<strong class="header1">Title:</strong>
-<p><%= @book.title %></p>
 
-<strong class="header2">Body:</strong>
-<p><%= @book.body %></p>
+<p>
+    <strong class="header1">Title:</strong>
+<%= @book.title %></p>
 
-<p><%= link_to "Edit","/books/#{@book.id}/edit" %> | <%= link_to "Back","/books" %></p>
+<p>
+    <strong class="header2">Body:</strong>
+<%= @book.body %></p>
+
+<p><%= link_to "Edit",edit_book_path(@book) %> | <%= link_to "Back",books_path %></p>
